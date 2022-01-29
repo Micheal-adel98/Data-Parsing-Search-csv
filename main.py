@@ -74,20 +74,25 @@ def getData():
     print('3- another column')
     choice = int(input("please enter number of choice: "))
     
+    #search by title
     if choice == 1:
         value = input("enter value to search in title: ")
         print(df.loc[df['title']==value])
 
+    #search by overview and release_date
     elif choice == 2:
         overview = input("enter value to search in overview: ")
         date = input("enter value to search in release date: ")
         print(df[(df['overview']==overview) & (df['release_date']==date)])
-    
+	
+    #search by any field
     elif choice == 3:
         print(" No | id | title | release_date | overview | popularity | vote_average | vote_count | video")
         print(" please copy & paste column name")
         option = input('paste column name to search in: ')
         value = input('enter value: ')
+	
+	#change value data type based on user choice
         if option == 'No' or option == 'id' or option == "vote_count":
             value = int(value)
             print(df.loc[df[option]==value])
