@@ -73,6 +73,7 @@ def getData():
     print("2- overview and release date")
     print('3- another column')
     choice = int(input("please enter number of choice: "))
+    
     if choice == 1:
         value = input("enter value to search in title: ")
         print(df.loc[df['title']==value])
