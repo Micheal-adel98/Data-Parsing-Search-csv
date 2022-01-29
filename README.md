@@ -1,5 +1,4 @@
-# Python Developer Technical task  @ DISCO APP
-
+# Python Developer Technical task 
 ## Installation and Running Setup
 
 * Install Backages for windows by ```pip install -r requirements.txt```
