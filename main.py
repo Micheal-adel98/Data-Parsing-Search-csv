@@ -1,13 +1,10 @@
 from xmlrpc.client import boolean
 import pandas as pd
-
-# df = pd.read_csv('Movie-Dataset-Latest (1).csv')
-# df.to_json('Movie-Dataset-Latest.json')
-
 import csv
 import json
 import xmltodict
 import pandas as pd
+
 
 # Function to convert a CSV to JSON
 # Takes the file paths as arguments
@@ -57,7 +54,7 @@ def make_json(convFilePath, jsonFilePath):
         excel_data_df.to_json(jsonFilePath)
     else:
         print("File format not accepted")
-# Driver Code
+
 
 # Decide the two file paths according to your
 # computer system
@@ -67,6 +64,8 @@ jsonFilePath = 'Movie-Dataset-Latest.json'
 # Call the make_json function
 make_json(convFilePath, jsonFilePath)
 
+
+#search function
 def getData():
     df = pd.read_csv('Movie-Dataset-Latest (1).csv')
     print("which search u want ?")
