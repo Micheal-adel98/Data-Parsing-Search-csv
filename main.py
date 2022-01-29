@@ -100,6 +100,7 @@ def getData():
             else:
                 print("all video rows = FALSE")
     else:
-        print("please check ur input")      
-
+        print("please check ur input")  
+	
+# Call the getData function
 getData()
